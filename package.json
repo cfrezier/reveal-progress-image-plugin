@@ -1,18 +1,18 @@
 {
-  "name": "@cfrezier/reveal-gamepad-controller-plugin",
-  "version": "1.1.2",
-  "description": "Reveal.js plugin allowing to control slides using any gamepad",
+  "name": "@cfrezier/reveal-progress-image-plugin",
+  "version": "1.0.0",
+  "description": "Reveal.js plugin allowing to add a small image to your progress bar",
   "author": "Christophe Frézier <frezier@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
-  "homepage": "https://github.com/cfrezier/reveal-gamepad-controller-plugin#readme",
+  "homepage": "https://github.com/cfrezier/reveal-progress-image-plugin#readme",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/cfrezier/reveal-gamepad-controller-plugin/issues"
+    "url": "https://github.com/cfrezier/reveal-progress-image-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cfrezier/reveal-gamepad-controller-plugin.git"
+    "url": "git+https://github.com/cfrezier/reveal-progress-image-plugin.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
