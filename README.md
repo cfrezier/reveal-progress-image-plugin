@@ -1,7 +1,17 @@
 # reveal-progress-image-plugin
 Add an image in your reveal.js progress bar
 
-## Configution
+## Use plugin
+
+````js
+Reveal.initialize({
+    hash: true,
+    progress: true,
+    plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealProgressImage(Reveal)],
+    });
+````
+
+## Default Configuration
 
 By defaut configuration is set to:
 ````js
@@ -16,3 +26,17 @@ By defaut configuration is set to:
 ````
 
 Please make sure to include a file at ./images/progress.web or change the parameter
+You can overload this configuration like this:
+````js
+Reveal.initialize({
+    hash: true,
+    progress: true,
+
+    progressImage: {
+        imageSrc: './my-image.png'
+    },
+    
+    plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealProgressImage(Reveal)],
+});
+````
+
