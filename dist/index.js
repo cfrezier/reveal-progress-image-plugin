@@ -2,7 +2,7 @@ const RevealProgressImage = ((Reveal) => {
     return {
         id: 'progressImage',
         init: (reveal) => {
-            let config = Object.assign({ iconSize: [30, 30], bottom: 5, moveTransition: 'left .8s cubic-bezier(.26,.86,.44,.985)', imageSrc: 'https://en.m.wikipedia.org/wiki/File:Angular_full_color_logo.svg', imageAnimation: [
+            let config = Object.assign({ iconSize: [30, 30], bottom: 5, moveTransition: 'left .8s cubic-bezier(.26,.86,.44,.985)', imageSrc: './images/progress.webp', imageAnimation: [
                     { transform: 'rotateY(0deg)' },
                     { transform: 'rotateY(360deg)' }
                 ] }, reveal.getConfig().progressImage);
