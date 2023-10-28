@@ -11,21 +11,11 @@ Reveal.initialize({
     });
 ````
 
-## Default Configuration
+## Custom Configuration
 
-By defaut configuration is set to:
-````js
-    iconSize: [30, 30],
-    bottom: 5,
-    moveTransition: 'left .8s cubic-bezier(.26,.86,.44,.985)',
-    imageSrc: './images/progress.webp',
-    imageAnimation: [
-        { transform: 'rotateY(0deg)' },
-        { transform: 'rotateY(360deg)' }
-    ]
-````
+### Overload configuration
 
-Please make sure to include a file at ./images/progress.web or change the parameter
+Please make sure to include a file at ./images/progress.web or change the parameter. 
 You can overload this configuration like this:
 ````js
 Reveal.initialize({
@@ -40,3 +30,28 @@ Reveal.initialize({
 });
 ````
 
+
+### Default configuration
+
+By defaut configuration is set to:
+````js
+    iconSize: [30, 30],
+    bottom: 5,
+    moveTransition: 'left .8s cubic-bezier(.26,.86,.44,.985)',
+    imageSrc: './images/progress.webp',
+    imageAnimation: ANIMATIONS.DANCE,
+````
+
+### Use preconfigured animations
+````js
+const progressPlugin = RevealProgressImage(Reveal);
+
+Reveal.initialize({
+    hash: true,
+    progress: true,
+    progressImage: {
+        imageAnimation: progressPlugin.ANIMATIONS.FLY
+    },
+    plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealProgressImage(Reveal)],
+});
+````
