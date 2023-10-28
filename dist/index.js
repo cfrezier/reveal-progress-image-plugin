@@ -41,8 +41,8 @@ const RevealProgressImage = ((Reveal) => {
             }
             document.body.appendChild(progressImage);
             const updatePosition = () => {
-                const progress = Reveal.getProgress() * 100;
-                progressImage.style.left = `calc(${progress}% - ${config.iconSize[0] * progress}px)`;
+                const progress = Reveal.getProgress();
+                progressImage.style.left = `calc(${progress * 100}% - ${config.iconSize[0] * progress}px)`;
             };
             Reveal.on('ready', updatePosition);
             Reveal.on('resize', updatePosition);
