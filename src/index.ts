@@ -39,8 +39,8 @@ const RevealProgressImage = ((Reveal: any) => {
 
             const progressImage = document.createElement('img');
             progressImage.style.position = 'absolute';
-            progressImage.style.maxHeight = config.iconSize[0] + 'px';
-            progressImage.style.maxWidth = config.iconSize[1] + 'px';
+            progressImage.style.maxWidth = config.iconSize[0] + 'px';
+            progressImage.style.maxHeight = config.iconSize[1] + 'px';
             progressImage.style.bottom = config.bottom + 'px';
             progressImage.style.transition = config.moveTransition;
             progressImage.src = config.imageSrc;
