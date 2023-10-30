@@ -1,26 +1,33 @@
+export const ANIMATIONS = {
+    FLIP: [
+        { transform: 'rotateY(0deg)' },
+        { transform: 'rotateY(360deg)' }
+    ],
+    FLY: [
+        { transform: 'translateX(0px)' },
+        { transform: 'translateX(5px)' },
+        { transform: 'translateY(5px)' },
+        { transform: 'translateX(0px)' },
+    ],
+    DANCE: [
+        { transform: 'rotate(-20deg)' },
+        { transform: 'rotate(20deg)' },
+        { transform: 'rotate(-20deg)' },
+    ],
+    MOVE: [
+        { transform: 'translateX(0px)' },
+        { transform: 'translateX(5px)' },
+        { transform: 'translateX(0px)' },
+    ],
+    CIRCULAR_FLY: [
+        { transform: 'translate(0px, 0px)' },
+        { transform: 'translate(2.5px, -2.5px)' },
+        { transform: 'translate(0px, -5px)' },
+        { transform: 'translate(-2.5px, -2.5px)' },
+        { transform: 'translate(0px, 0px)' },
+    ]
+};
 const RevealProgressImage = ((Reveal) => {
-    const ANIMATIONS = {
-        FLIP: [
-            { transform: 'rotateY(0deg)' },
-            { transform: 'rotateY(360deg)' }
-        ],
-        FLY: [
-            { transform: 'translateX(0px)' },
-            { transform: 'translateX(5px)' },
-            { transform: 'translateY(5px)' },
-            { transform: 'translateX(0px)' },
-        ],
-        DANCE: [
-            { transform: 'rotate(-20deg)' },
-            { transform: 'rotate(20deg)' },
-            { transform: 'rotate(-20deg)' },
-        ],
-        MOVE: [
-            { transform: 'translateX(0px)' },
-            { transform: 'translateX(5px)' },
-            { transform: 'translateX(0px)' },
-        ]
-    };
     return {
         id: 'progressImage',
         ANIMATIONS,
