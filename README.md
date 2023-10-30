@@ -52,6 +52,6 @@ Reveal.initialize({
     progressImage: {
         imageAnimation: progressPlugin.ANIMATIONS.FLY
     },
-    plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealProgressImage(Reveal)],
+    plugins: [RevealMarkdown, RevealHighlight, RevealNotes, progressPlugin],
 });
 ````
